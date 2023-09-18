@@ -1,0 +1,217 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #212121; */
+    
+}
+.register-container{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+.seller-container{
+border:1px solid black;
+display: flex;
+justify-content: space-between;
+width: 48%;
+
+}
+.buyer-container-value{
+display: flex;
+justify-content: space-between;
+
+
+}
+.buyer-container{
+    
+    
+  box-shadow: 0px 15px 15px 2px purple;
+}
+.input-group-register {
+    position: relative;
+    margin:1.2rem 0px;
+    
+   }
+   
+   .input-register {
+    border: solid 1.5px #9e9e9e;
+    border-radius: 1rem;
+    background: none;
+    padding: 0.6rem;
+    font-size: 0.8rem;
+    color: #f5f5f5;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .user-label-register {
+    position: absolute;
+    left: 15px;
+    color: #e8e8e8;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .input-register:focus, input-register:valid {
+    outline: none;
+    border: 1.5px solid #1a73e8;
+   }
+   
+   .input-register:focus ~ label, input:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #212121;
+    padding: 0 .2em;
+    color: #2196f3;
+   }
+   /* .client-image{
+    border-right: 2px solid black;
+   } */
+   .image-upload {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #a49090a3;
+    border-radius: 500px;
+    box-shadow: 0 7px 47px -15px purple;
+}
+   .img-upload{
+   display: flex;
+    justify-content: center;
+    margin-bottom: 6vh;
+   }
+   .buyer-container{
+    
+    padding: 10px;
+   }
+   .user-detail{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
+   }
+   
+   .register-submit {
+    --color: #dadae4;
+    font-family: inherit;
+    display: inline-block;
+    width: 6rem;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    margin: 20px;
+    font-size: 15px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+  }
+  
+  .register-submit::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+  }
+  
+  .register-submit:hover {
+    color: black;
+  }
+  
+  .register-submit:before {
+    top: 100%;
+    left: 100%;
+    transition: .3s all;
+  }
+  
+  .register-submit:hover::before {
+    top: -30px;
+    left: -30px;
+  }
+
+  .card {
+    width:30%;
+    height: 50vh;
+    padding: 1.9rem 1.2rem;
+    text-align: center;
+    background: #2a2b38;
+    margin:9% auto;
+   }
+   
+   /*Inputs*/
+   .field {
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    background-color: #1f2029;
+    border-radius: 4px;
+    padding: .5em 1em;
+   }
+   
+   .input-icon {
+    height: 1em;
+    width: 1em;
+    fill: #ffeba7;
+   }
+   
+   .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+   }
+   
+   /*Text*/
+   .title {
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #f5f5f5;
+   }
+   
+   /*Buttons*/
+   .btn {
+    margin: 4rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: .8em;
+    text-transform: uppercase;
+    padding: 0.6em 1.2em;
+    background-color: #ffeba7;
+    color: #5e6681;
+    box-shadow: 0 8px 24px 0 rgb(255 235 167 / 20%);
+    transition: all .3s ease-in-out;
+   }
+   
+   .btn-link {
+    color: #f5f5f5;
+    display: block;
+    font-size: .75em;
+    transition: color .3s ease-out;
+   }
+   
+   /*Hover & focus*/
+   .field input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+   
+   .btn:hover {
+    background-color: #5e6681;
+    color: #ffeba7;
+    box-shadow: 0 8px 24px 0 rgb(16 39 112 / 20%);
+   }
+   
+   .btn-link:hover {
+    color: #ffeba7;
+   }
+   .login-form{
+    height: 30vh;
+    padding: 20px 0px
+   }
+   
