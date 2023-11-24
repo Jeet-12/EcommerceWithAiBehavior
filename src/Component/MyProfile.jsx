@@ -1,13 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from './Navbar'
-import Banner from './Banner'
 import {collection,getDocs,query,where} from 'firebase/firestore'
 import { auth, db } from '../Firebase/FirebaseConfig'
-import HomeProductShow from '../Products Section/HomeProductShow'
-
-
-const HomePage = () => {
-  const GetCurrentUser = () =>{
+const MyProfile = () => {
+    const GetCurrentUser = () =>{
     const [user,setUser] = useState('')
     const userCollection = collection(db,"users")
     useEffect (()=>{
@@ -27,19 +22,19 @@ const HomePage = () => {
     },[])
     return user
   }
+
+  
   let loggedUser = GetCurrentUser()
-  // let loggedUserValue = loggedUser[0] ? JSON.parse(loggedUser[0]) : null;
+  // console.log(loggedUser[0].email)
   return (
     <>
-    
-      
-        <Navbar/>
-        <Banner/>
-        <div className="container">
-        <HomeProductShow type={"Mobile"}/>
-    </div>
+{loggedUser[0]?.email ? (
+      <span>{loggedUser[0].email}</span>
+    ) : (
+      <span>Loading...</span>
+    )}
     </>
   )
 }
 
-export default HomePage
+export default MyProfile
