@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 import {auth , db} from "../Firebase/FirebaseConfig"
 import { collection,addDoc } from 'firebase/firestore'
+import Navbar from './Navbar'
 
 
 const Register = () => {
@@ -54,7 +55,7 @@ const Register = () => {
     
     return (
         <>
-       
+       <Navbar/>
         <div className='Register-container'>
 
         <div className="form-box">

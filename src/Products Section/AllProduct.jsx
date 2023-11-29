@@ -31,13 +31,18 @@ const AllProduct = (props) => {
     return (
         <div className="allproduct-container">
             <Navbar />
-            <div className="allproduct-conatiner-items">
+            <div className="allproduct-conatiner-items" style={{margin:"0rem 1rem"}}>
+            <div style={{display:"flex"}}> 
                {products.map((item,index)=>{
-               return(               
-                 <ShowProducts product={item} key={index}/>)
+               return(   
+                <div style={{marginRight:"1rem"}}>     
+                 <ShowProducts product={item} key={index}/>
+                 </div> 
+                 )
                })
 
                }
+               </div>
                 
             </div>
         </div>

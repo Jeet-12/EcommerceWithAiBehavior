@@ -1,6 +1,7 @@
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import Navbar from './Navbar'
 
 const Login = () => {
  
@@ -24,13 +25,13 @@ const handleLogin = (e) =>{
         setSuccessfullMsg('');
         navigate("/");
 
-    },1000)
+    },100)
 })
 }
   
   return (
       <>
-     
+     <Navbar/>
       <div className='Login-container'>
 
       <div className="form-box">
